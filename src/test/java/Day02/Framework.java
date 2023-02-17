@@ -176,7 +176,7 @@ public class Framework {
 		action.dragAndDrop(srcElement,desElement).build().perform();
 	}
 	
-	public static void screenShot(String fileName) throws Exception
+	public static void screenShot(String fileName) throws Exception // taking screenshot
 	{
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File des = new File(".\\src\\test\\resources\\screenshot\\"+fileName+".png");
